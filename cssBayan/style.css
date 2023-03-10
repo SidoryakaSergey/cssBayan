@@ -7,3 +7,21 @@
 body {
   background-color: rgb(191, 217, 247);
 }
+
+.wrapper {
+  width: 90%;
+  margin: 2% auto;
+}
+
+.bayan {
+  /* display: flex;
+  flex-direction: column; */
+}
+
+input {
+  display: none;
+}
+
+input:checked ~ label {
+  color: red;
+}
