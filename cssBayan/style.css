@@ -22,7 +22,7 @@ input {
 }
 
 .wrapper {
-  width: 60%;
+  width: 90%;
   margin: 2% auto;
 }
 
@@ -93,14 +93,12 @@ input:checked ~ label > .img {
 }
 
 @media screen and (min-width: 820px) {
-  .img {
-    width: 60%;
-  }
-}
-
-@media screen and (min-width: 820px) {
   body {
     font-size: 3vw;
+  }
+
+  .img {
+    width: 60%;
   }
 
   label {
@@ -115,6 +113,10 @@ input:checked ~ label > .img {
 @media screen and (min-width: 1376px) {
   body {
     font-size: 2vw;
+  }
+
+  .wrapper {
+    width: 60%;
   }
 
   label {
@@ -142,5 +144,10 @@ input:checked ~ label > .img {
     opacity: 1;
     transform: scale(1);
     transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  }
+
+  input:hover ~ label > .icon {
+    rotate: -180deg;
+    transition: 0.5s;
   }
 }
