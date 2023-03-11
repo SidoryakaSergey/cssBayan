@@ -115,6 +115,7 @@ input:checked ~ label > .img {
 
   label {
     padding: 0.1rem 3rem;
+    cursor: pointer;
   }
 
   .img {
