@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: rgb(191, 217, 247);
+  font-weight: bold;
+  font-size: 4vw;
+  color: rgb(18, 16, 121);
+}
+
+h1 {
+  padding: 0 0 1rem;
+}
+
+input {
+  display: none;
+}
+
+.wrapper {
+  width: 90%;
+  margin: 2% auto;
+}
+
+label {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.3rem 0.7rem;
+}
+
+label > span {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  display: block;
+  background-image: url('./icons-up.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 7%;
+  aspect-ratio: 4 / 4;
+  rotate: -90deg;
+  transition: 0.5s;
+}
+
+input:checked ~ label > .icon {
+  rotate: -180deg;
+  transition: 0.5s;
+}
+
+input:checked ~ label {
+  color: rgb(197, 152, 73);
+}
+
+input:checked ~ label > .img {
+  aspect-ratio: 4 / 4;
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.img {
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 2% auto;
+  width: 90%;
+  opacity: 0;
+  transform: scale(0.5);
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.meme-img1 {
+  background-image: url('./meme/meme1.jpg');
+}
+.meme-img2 {
+  background-image: url('./meme/meme2.jpg');
+}
+.meme-img3 {
+  background-image: url('./meme/meme3.jpg');
+}
+.meme-img4 {
+  background-image: url('./meme/meme4.jpg');
+}
+
+@media screen and (min-width: 820px) {
+  body {
+    font-size: 3vw;
+  }
+
+  .img {
+    width: 60%;
+  }
+
+  label {
+    padding: 0.1rem 2rem;
+  }
+
+  .img {
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 1376px) {
+  body {
+    font-size: 2vw;
+  }
+
+  .wrapper {
+    width: 60%;
+  }
+
+  label {
+    padding: 0.1rem 3rem;
+    cursor: pointer;
+  }
+
+  .img {
+    width: 40%;
+  }
+
+  .icon {
+    opacity: 0;
+  }
+
+  .bayan:hover .icon {
+    opacity: 1;
+  }
+
+  input:hover ~ label {
+    color: rgb(197, 152, 73);
+  }
+
+  input:hover ~ label > .img {
+    aspect-ratio: 4 / 4;
+    opacity: 1;
+    transform: scale(1);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  }
+
+  input:hover ~ label > .icon {
+    rotate: -180deg;
+    transition: 0.5s;
+  }
+}
