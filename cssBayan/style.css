@@ -8,7 +8,6 @@ body {
   font-family: 'Roboto', sans-serif;
   background-color: rgb(191, 217, 247);
   font-weight: bold;
-  /* font-size: 0.8rem; */
   font-size: 4vw;
   color: rgb(18, 16, 121);
 }
@@ -29,11 +28,7 @@ input {
 label {
   display: flex;
   justify-content: space-between;
-  /* background-color: rgb(89, 91, 219); */
   padding: 0.3rem 0.7rem;
-  /* margin: 0.7rem 1rem; */
-  /* border: 1px solid black;
-  border-radius: 10% / 50%; */
 }
 
 label > span {
@@ -80,7 +75,6 @@ input:checked ~ label > .img {
 
 .meme-img1 {
   background-image: url('./meme/meme1.jpg');
-  /* aspect-ratio: 4 / 4; */
 }
 .meme-img2 {
   background-image: url('./meme/meme2.jpg');
